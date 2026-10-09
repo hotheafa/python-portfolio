@@ -2,7 +2,7 @@
 # This program prints a short record about a network device.
   
 device_name = "edge-router"
-#   (syntax error) الخطأ هو البدأ باسم المتغير ب رقم 2 
+#   (syntax error) الخطأ هو البدء باسم المتغير ب رقم 2 
 end_ip = "192.0.2.1"
 #  (syntax error)  الخطأ هو استخدام اسم المتغير  بقيمة محجوزة للغة 
 device_type= "router"
