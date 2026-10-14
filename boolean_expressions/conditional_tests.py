@@ -1,3 +1,6 @@
+#conditional_tests.py
+# عشرة اختبارات شرطية لفحص الشروط الأمنية
+
 user = "analyst"
 role = "viewer"
 failed = 3
