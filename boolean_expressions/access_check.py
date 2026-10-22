@@ -1,11 +1,11 @@
 #access_check.py
-# برنامج لفحص صلاحيات الدخول الأمني بناءً على المدخلات   
+# A program for checking security access privileges based on inputs  
 
 MAX_FAILED = 5
 role = input("Role: ")
-MFA = input("MFA passed (yes/no):")
+mfa_answer = input("MFA passed (yes/no): ")
 failed =int(input("Failed attempts: "))
-mfa_ok = MFA == "yes" 
+mfa_ok = mfa_answer == "yes" 
 is_privileged = role == "root" or role == "admin"
 can_log_in =  (mfa_ok) and (failed < MAX_FAILED) 
 print(f"MFA OK: {mfa_ok}\nPrivileged role: {is_privileged}\nCan log in: {can_log_in}")
