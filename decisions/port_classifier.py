@@ -1,10 +1,10 @@
 #port_classifier.py
-# برنامج للتحقق من صحة أرقام المنافذ وتصنيفها حسب نطاقات إيانا والخدمات المحددة
+# A program to verify and classify port numbers according to IANA ranges and specified services.
 
 port = int(input("Port: "))
 if port < 0 or port > 65535:
     print("Invalid port: use a number from 0 to 65535.")
-#تصنيف النطاق (للمنافذ الصالحة) بحيث  يطبع النطاق الذي ينتمي إليه المنفذ
+#Domain classification (for valid ports) so that the domain to which the port belongs is printed
 else:
     if port <= 1023:
        print("Range: system")
@@ -12,7 +12,7 @@ else:
        print("Range: user")
     else:
        print("Range: dynamic or private")
-#تحديد الخدمة للمنافذ 22 و 80 و 443 فقط
+#Service restricted to ports 22, 80 and 443 only
 if port == 22:
     print("Service: ssh")
 if port == 80:

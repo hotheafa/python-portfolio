@@ -1,5 +1,5 @@
 #login_decision.py
-# برنامج لاتخاذ قرار تسجيل الدخول الأمني بناءً على حالة الحساب واسم المستخدم وكلمة المرور
+# A program for making secure login decisions based on account status, username, and password.
 
 MAX_FAILED = 5
 KNOWN_USER = "analyst"

@@ -1,5 +1,5 @@
 #risk_score.py
-# برنامج لحساب درجة خطورة تسجيل الدخول وتصنيف مستوى الأمان إلى منخفض أو متوسط أو مرتفع
+# A program to calculate the risk score of a login and classify the security level as low, medium, or high.
 
 score = 0
 failed_attempts = int(input("Failed attempts in the last hour: "))
