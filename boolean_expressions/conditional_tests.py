@@ -1,5 +1,5 @@
 #conditional_tests.py
-#  عشرة اختبارات شرطية لفحص الشروط الأمنية
+# Ten police tests to examine security conditions
 
 user = "analyst"
 role = "viewer"
@@ -30,12 +30,12 @@ print("\nIs role != 'viewer'? I predict False.")
 print (role != "viewer")
 
 #Test 7
-print("\nIs 0 > port > 25? I predict False.")
-print ( 0 > port > 25)
+print("\nIs 0 < port and port < 25? I predict False.")
+print ( 0 < port and port > 25)
 
 #Test 8 
-print("\nIs failed - 6 == 1? I predict False.")
-print (failed - 6 == 1 )
+print("\nIs failed - 6 >== 7? I predict False.")
+print (failed - 6 >= 7 )
 
 #Test 9
 print("\nIs ((not (user == 'analyst' and port == 22 and role == 'viewer')) or (user == 'analyst' and role == 'Viewer'))? I predict False.")
