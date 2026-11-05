@@ -6,10 +6,10 @@ CORRECT_PIN = "2580"
 tries = 0
 
 while tries < MAX_TRIES:
-    PIN = input("PIN: ")
+    pin = input("PIN: ")
     tries += 1 
     
-    if PIN == CORRECT_PIN:
+    if pin == CORRECT_PIN:
         print("Access granted.")
         break
     else:
