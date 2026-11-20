@@ -20,10 +20,13 @@ def password_ok(password, username):
 
     """Evaluate the password against length and username rules and return acceptance or rejection status."""
     if (long_enough(password, minimum=8) == True) and (differs_from_username(password, username) == True):
-        return "Password accepted."
-    return "Password rejected."
+        return True
+    return False
 
 username = input("Username: ")
 password = input("Password: ")
 
-print(password_ok(password, username))
+if password_ok(password,username):
+    print("Password accepted.")
+else:
+    print("Password rejected.")
